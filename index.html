@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <title>Modern Ticket List Application</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <header class="header">
+                <h1 class="header-title">My Categories</h1>
+                <form class="sidebar-form" data-new-category-form>
+                    <div class="form-control">
+                        <input type="text" placeholder="Enter Category" data-new-category-input>
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-plus" aria-hidden="true"></i> Add Category
+                    </button>
+                </form>
+            </header>
+            <ul class="sidebar-list" data-categories>
+                <li class="sidebar-item">All Categories</li>
+                <li class="sidebar-item">
+                    Work
+                    <input type="color" class="sidebar-color">
+                </li>
+                <li class="sidebar-item">
+                    School
+                    <input type="color" class="sidebar-color">
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Header -->
+            <header class="header">
+                <div>
+                    <h1 class="header-title">Welcome Back, <strong>Ticketmaster</strong></h1>
+                    <div class="currently-viewing" data-currently-viewing>You are currently viewing the main ticket hub.</div>
+                </div>
+
+                <!-- Create Ticket Form -->
+                <form class="create-ticket-form" data-new-ticket-form>
+                    <div class="form-control">
+                        <select data-new-ticket-select required>
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" data-new-ticket-input placeholder="Enter Ticket" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        <i class="fa fa-plus" aria-hidden="true"></i> Add Ticket
+                    </button>
+                </form>
+
+                <!-- Update Ticket Form -->
+                <form class="edit-ticket-form" data-edit-ticket-form>
+                    <div class="form-control">
+                        <select data-edit-ticket-select>
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" data-edit-ticket-input placeholder="Enter Ticket" required>
+                    </div>
+                    <button class="btn btn-primary">Save</button>
+                </form>
+            </header>
+
+            <!-- Cards -->
+            <section class="tickets-container" data-cards>
+                <div class="ticket" style="border-color: black;">
+                    <div class="ticket-tag" style="background-color: rgba(0, 0, 0, 0.5); color: black;">
+                        Work
+                    </div>
+                    <p class="ticket-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, doloribus.
+                    </p>
+                    <div class="ticket-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="ticket" style="border-color: black;">
+                    <div class="ticket-tag" style="background-color: rgba(0, 0, 0, 0.5); color: black;">
+                        Work
+                    </div>
+                    <p class="ticket-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, doloribus.
+                    </p>
+                    <div class="ticket-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="ticket" style="border-color: black;">
+                    <div class="ticket-tag" style="background-color: rgba(0, 0, 0, 0.5); color: black;">
+                        Work
+                    </div>
+                    <p class="ticket-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, doloribus.
+                    </p>
+                    <div class="ticket-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+                <div class="ticket" style="border-color: black;">
+                    <div class="ticket-tag" style="background-color: rgba(0, 0, 0, 0.5); color: black;">
+                        Work
+                    </div>
+                    <p class="ticket-description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, doloribus.
+                    </p>
+                    <div class="ticket-actions">
+                        <i class="far fa-edit"></i>
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
